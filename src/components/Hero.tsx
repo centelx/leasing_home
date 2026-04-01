@@ -96,7 +96,7 @@ export default function Hero() {
           <div className="relative">
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-accent/20 to-transparent blur-2xl" />
             <img
-              src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1920&q=80"
+              src="https://plus.unsplash.com/premium_photo-1661908759956-93c29efea72b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bGVhc2luZ3xlbnwwfHwwfHx8MA%3D%3D"
               alt="Doradztwo leasingowe"
               className="relative rounded-2xl object-cover shadow-2xl"
               width={960}
