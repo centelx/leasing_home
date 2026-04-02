@@ -46,7 +46,7 @@ export default function Footer() {
               <li>
                 <span className="flex items-center gap-2 text-sm text-gray-400">
                   <MapPin className="h-4 w-4 shrink-0" />
-                  ul. Świderska 58 lok. 9, 21-400 Łuków
+                  ul. Wyszyńskiego 38, 21-400 Łuków
                 </span>
               </li>
             </ul>
