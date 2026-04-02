@@ -50,7 +50,7 @@ export default function Navbar() {
             <img
               src="/leasing-logo.jpg"
               alt="Perfect Leasing"
-              className="h-14 w-auto lg:h-16"
+              className="h-12 w-auto lg:h-[54px]"
             />
           </Link>
 
