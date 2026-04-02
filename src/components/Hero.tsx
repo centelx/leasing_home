@@ -59,7 +59,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="mt-12 flex flex-wrap justify-center lg:justify-start gap-8"
+            className="mt-12 flex flex-wrap gap-8"
           >
             {[
               { icon: Clock, text: 'Decyzja nawet w 24h' },
