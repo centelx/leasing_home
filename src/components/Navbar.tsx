@@ -46,9 +46,9 @@ export default function Navbar() {
     >
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between lg:h-20">
-          <Link to="/" className="flex items-center h-full py-1">
+          <Link to="/" className="flex items-center h-full py-2">
             <img
-              src="/leasing_logo.png"
+              src="/logo_leasing.png"
               alt="Perfect Leasing"
               className="h-full w-auto"
             />
