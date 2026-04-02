@@ -13,18 +13,9 @@ export default function Hero() {
         <div className="absolute -bottom-20 -left-20 h-[400px] w-[400px] rounded-full bg-blue-100/40 blur-3xl" />
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-4 pb-16 pt-28 sm:px-6 lg:flex lg:min-h-screen lg:items-center lg:gap-16 lg:px-8 lg:pt-0">
+      <div className="relative mx-auto max-w-7xl px-4 pb-16 pt-32 sm:px-6 lg:flex lg:min-h-screen lg:items-center lg:gap-16 lg:px-8 lg:pt-24">
         <div className="lg:w-1/2">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <span className="mb-4 inline-flex items-center gap-2 rounded-full bg-accent/10 px-4 py-1.5 text-sm font-medium text-accent">
-              <Shield className="h-4 w-4" />
-              Zaufany doradca leasingowy
-            </span>
-          </motion.div>
+
 
           <motion.h1
             initial={{ opacity: 0, y: 30 }}

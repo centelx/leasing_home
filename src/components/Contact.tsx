@@ -25,8 +25,8 @@ export default function Contact() {
       });
 
       if (response.ok) {
-        setStatus('success');
         form.reset();
+        window.location.href = 'https://leasing-alx.pages.dev/';
       } else {
         setStatus('error');
       }
