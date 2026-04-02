@@ -14,7 +14,7 @@ export default function Hero() {
       </div>
 
       <div className="relative mx-auto max-w-7xl px-4 pb-16 pt-32 sm:px-6 lg:flex lg:min-h-screen lg:items-center lg:gap-16 lg:px-8 lg:pt-24">
-        <div className="lg:w-1/2">
+        <div className="text-center lg:text-left lg:w-1/2">
 
 
           <motion.h1
@@ -33,7 +33,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="mt-6 max-w-xl text-lg leading-relaxed text-secondary"
+            className="mt-6 mx-auto lg:mx-0 max-w-xl text-lg leading-relaxed text-secondary"
           >
             Zapomnij o masowych infoliniach. Przeprowadzę Cię przez cały proces
             – od doboru finansowania po odbiór sprzętu. Szybko, konkretnie i na
@@ -44,7 +44,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="mt-8 flex flex-col gap-4 sm:flex-row"
+            className="mt-8 flex flex-col items-center lg:items-start gap-4 sm:flex-row sm:justify-center lg:justify-start"
           >
             <button
               onClick={scrollToContact}
@@ -59,7 +59,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="mt-12 flex flex-wrap gap-8"
+            className="mt-12 flex flex-wrap justify-center lg:justify-start gap-8"
           >
             {[
               { icon: Clock, text: 'Decyzja nawet w 24h' },
