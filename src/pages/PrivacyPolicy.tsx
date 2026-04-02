@@ -20,8 +20,9 @@ export default function PrivacyPolicy() {
                 1. Administrator Danych
               </h2>
               <p className="mt-3">
-                Administratorem jest [PEŁNA NAZWA FIRMY] z siedzibą przy [PEŁNY
-                ADRES FIRMY], NIP: [NIP FIRMY].
+                Administratorem jest OCHNIO Consulting Mateusz Ochnio z siedzibą
+                przy ul. Świderska 58 lok. 9, 21-400 Łuków, NIP: 5381858454,
+                REGON: 380984364.
               </p>
             </section>
 
@@ -41,7 +42,7 @@ export default function PrivacyPolicy() {
               </h2>
               <p className="mt-3">
                 Rozmowy mogą być nagrywane. Brak zgody = prosimy o kontakt
-                mailowy: [EMAIL KONTAKTOWY].
+                mailowy: kontakt@perfect-leasing.pl.
               </p>
             </section>
 
