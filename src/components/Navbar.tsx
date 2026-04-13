@@ -5,6 +5,7 @@ import { Menu, X } from 'lucide-react';
 const navLinks = [
   { label: 'O mnie', href: '#about' },
   { label: 'Proces', href: '#process' },
+  { label: 'Kalkulator', href: '/kalkulator' },
   { label: 'FAQ', href: '#faq' },
   { label: 'Kontakt', href: '#contact' },
 ];
@@ -55,16 +56,26 @@ export default function Navbar() {
           </Link>
 
           <div className="hidden md:flex md:items-center md:gap-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                onClick={(e) => handleAnchorClick(e, link.href)}
-                className="text-sm font-medium text-secondary transition-colors hover:text-accent"
-              >
-                {link.label}
-              </a>
-            ))}
+            {navLinks.map((link) =>
+              link.href.startsWith('/') ? (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  className="text-sm font-medium text-secondary transition-colors hover:text-accent"
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  onClick={(e) => handleAnchorClick(e, link.href)}
+                  className="text-sm font-medium text-secondary transition-colors hover:text-accent"
+                >
+                  {link.label}
+                </a>
+              )
+            )}
             <a
               href="#contact"
               onClick={(e) => handleAnchorClick(e, '#contact')}
@@ -86,16 +97,26 @@ export default function Navbar() {
         {isOpen && (
           <div className="border-t border-gray-100 bg-white/95 backdrop-blur-lg md:hidden">
             <div className="space-y-1 px-2 pb-4 pt-2">
-              {navLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={(e) => handleAnchorClick(e, link.href)}
-                  className="block rounded-lg px-3 py-2.5 text-base font-medium text-secondary transition-colors hover:bg-muted hover:text-accent"
-                >
-                  {link.label}
-                </a>
-              ))}
+              {navLinks.map((link) =>
+                link.href.startsWith('/') ? (
+                  <Link
+                    key={link.href}
+                    to={link.href}
+                    className="block rounded-lg px-3 py-2.5 text-base font-medium text-secondary transition-colors hover:bg-muted hover:text-accent"
+                  >
+                    {link.label}
+                  </Link>
+                ) : (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    onClick={(e) => handleAnchorClick(e, link.href)}
+                    className="block rounded-lg px-3 py-2.5 text-base font-medium text-secondary transition-colors hover:bg-muted hover:text-accent"
+                  >
+                    {link.label}
+                  </a>
+                )
+              )}
               <a
                 href="#contact"
                 onClick={(e) => handleAnchorClick(e, '#contact')}
