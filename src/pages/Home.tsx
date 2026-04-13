@@ -1,3 +1,4 @@
+import VehisCalculator from '../components/VehisCalculator';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Process from '../components/Process';
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <About />
       <Process />
+      <VehisCalculator />
       <FAQ />
       <Contact />
     </>
